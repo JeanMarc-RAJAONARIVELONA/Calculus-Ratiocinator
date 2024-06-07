@@ -1,12 +1,11 @@
 package com.Calculusratiocinator.affirmation;
 
 
-public sealed abstract class Affirmation permits Truth_1, Lying_1, Affirmation_1 {
+public sealed abstract class Affirmation permits Beau,Pauvre ,Generous {
     protected final Boolean value;
 
     protected Affirmation(Boolean value) {
         this.value = value;
     }
-
-    public abstract Boolean isTruth();
+    public abstract boolean isTruth();
 }
